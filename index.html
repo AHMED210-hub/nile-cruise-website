@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="احجز رحلتك النيلية بسهولة عبر الإنترنت. أفضل الرحلات النيلية في مصر.">
+    <title>حجز رحلات نيلية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: right;
+            direction: rtl;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 1em 0;
+        }
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        main {
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 1em;
+        }
+        input, select, textarea {
+            padding: 0.5em;
+            margin-top: 0.5em;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 1em;
+            margin-top: 1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>حجز رحلات نيلية</h1>
+    </header>
+    <nav>
+        <a href="#">الرئيسية</a>
+        <a href="#">عن الرحلات</a>
+        <a href="#">تواصل معنا</a>
+    </nav>
+    <main>
+        <h2>احجز رحلتك النيلية الآن!</h2>
+        <form>
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="date">تاريخ الرحلة:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="guests">عدد الضيوف:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+            
+            <label for="notes">ملاحظات إضافية:</label>
+            <textarea id="notes" name="notes"></textarea>
+            
+            <button type="submit">احجز الآن</button>
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 جميع الحقوق محفوظة. حجز رحلات نيلية.
+    </footer>
+</body>
+</html>
